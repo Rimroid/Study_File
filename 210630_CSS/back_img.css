@@ -1,0 +1,8 @@
+#bg {
+    width: 256px;
+    height: 256px;
+    background-color: yellow;
+    background-image: url(icon.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
