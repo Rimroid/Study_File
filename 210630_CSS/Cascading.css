@@ -1,0 +1,35 @@
+/* 기본
+#color-2 {
+    color: pink;    
+}
+
+.color-1 {
+    color: green;
+}
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+*/
+
+/* 응용 */
+#intro .container h1 {
+    color: pink;
+}
+
+#intro div h1 {
+    color : green;
+}
+
+#intro h1 {
+    color: blue;
+}
+
+
+header h1 {
+    color: red;
+}
