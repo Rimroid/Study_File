@@ -1,0 +1,37 @@
+/*
+header {
+    color : red;
+}
+
+h1 {
+    color : blue;
+}
+
+p {
+    color : green;
+}
+*/
+
+header {
+    color : red;
+}
+
+header h1,
+footer h1 {
+    color : blue;
+}
+
+header p,
+footer p {
+    color : green;
+}
+
+/*
+footer h1 {
+    color: blue;
+}
+
+footer p {
+    color: green;
+}
+*/
