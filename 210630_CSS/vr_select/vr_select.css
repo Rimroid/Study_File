@@ -1,4 +1,5 @@
-/*
+/* 행동과 관련된 디자인*/
+
 a:link  {
     color: red;
 }
@@ -14,9 +15,9 @@ a:hover {
 input:focus {
     border: solid 10px red;
 }
-*/
 
-/*
+/* 규칙을 바탕으로 한 디자인 */
+
 li:first-child {
     color: red;
 }
@@ -28,14 +29,14 @@ li:last-child {
 li:nth-child(2n + 1) {
     color: gray;
 }
-*/
 
 
-li:before { 
+/* before, after */
+li::before { 
     content: "***";
 }
 
-li:after {
+li::after {
     content: "---";
 }
 
