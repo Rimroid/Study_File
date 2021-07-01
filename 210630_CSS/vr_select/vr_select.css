@@ -1,0 +1,61 @@
+/*
+a:link  {
+    color: red;
+}
+
+a:active {
+    color: blue;
+}
+
+a:hover {
+    color: pink;
+}
+
+input:focus {
+    border: solid 10px red;
+}
+*/
+
+/*
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:nth-child(2n + 1) {
+    color: gray;
+}
+*/
+
+
+li:before { 
+    content: "***";
+}
+
+li:after {
+    content: "---";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
