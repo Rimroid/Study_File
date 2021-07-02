@@ -1,0 +1,33 @@
+html, body {
+    /* html과 body의 margin, padding 값을 모두(위,아래,좌,우) 0으로 설정  */
+    margin: 0;
+    padding: 0;    
+}
+
+.box-model {
+    /* 공간의 크기는 유지하는 상태에서 padding으로 위치를 변경할 경우 */
+    box-sizing: border-box;
+    
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: solid 10px red;
+
+    /* 
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: ;
+    margin-bottom: ;
+
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: ;
+    padding-bottom: ;
+    */
+
+
+    /* margin: 100px 50px 0 150px; */
+    padding : 100px 50px 0 100px;
+
+    /* 순서는 12시 방향부터 시계방향 top, right, bottom, left */
+}
