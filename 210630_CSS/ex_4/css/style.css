@@ -26,8 +26,8 @@ html, body {
     */
 
 
-    /* margin: 100px 50px 0 150px; */
+    margin: 100px 50px 0 150px;
     padding : 100px 50px 0 100px;
-
     /* 순서는 12시 방향부터 시계방향 top, right, bottom, left */
+    
 }
