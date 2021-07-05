@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.center-1 {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+
+    /* 1번째 방법 */
+    margin: 0 auto;
+}
+
+.center-2 {
+    /* 2번째 방법 */
+    position: relative;
+    
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+
+    left: 50%;
+    margin-left: -150px;
+    
+}
