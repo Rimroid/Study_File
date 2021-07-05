@@ -4,7 +4,7 @@ html, body {
 }
 /* float_1 */
 .left-1 {
-    float : left;
+    float: left;
     
     width: 100px;
     height: 150px;
