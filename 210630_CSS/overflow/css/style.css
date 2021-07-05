@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* overflow */
+.over-box {
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    /* overflow-x: scroll; */
+
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+/* 실무 tip 2 */
+.left-2 {
+    float: left;
+
+    width: 100px;
+    height: 150px;
+    background-color: yellow;
+}
+
+.right-2 {
+    float: right;
+
+    width: 100px;
+    height: 150px;
+    background-color: blue;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.clearfix {
+    clear: both;
+}
+
+section {
+    overflow: hidden;
+
+    width: 800px;
+    background-color: orange;
+}
