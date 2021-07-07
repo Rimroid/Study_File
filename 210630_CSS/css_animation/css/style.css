@@ -4,29 +4,29 @@
     background-color: yellow;
 
     /* 2차원적 회전 */
-    /* transform: rotate(-10deg); */
+    transform: rotate(-10deg);
     
     /* 크기(비율) 확대 및 축소 */
-    /* transform: scale(0.5, 0.5); */
+    transform: scale(0.5, 0.5);
     
     /* 3차원적 회전 */
-    /* transform: skew(-10deg, 20deg); */
+    transform: skew(-10deg, 20deg);
     
     /* 오브젝트 위치 변경 */
-    /* transform: translate(100px, 300px); */
+    transform: translate(100px, 300px);
 
     /* margin-left: 300px; */
     /* margin-top: 500px; */
 
     /* freefix */
     /* 크롬, 사파리 브라우저 */
-    /* -webkit-transform: rotate(10deg); */
+    -webkit-transform: rotate(10deg);
     /* 익스플로러, 엣지 브라우저 */
-    /* -ms-transform: rotate(10deg); */
+    -ms-transform: rotate(10deg);
     /* 파이어폭스 브라우저 */
-    /* -moz-transform: rotate(10deg); */
+    -moz-transform: rotate(10deg);
     /* 오페라 브라우저 */
-    /* -o-transform: rotate(10deg); */
+    -o-transform: rotate(10deg);
 
     transform: rotate(10deg);
 }
