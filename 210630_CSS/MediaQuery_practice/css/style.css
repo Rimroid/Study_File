@@ -9,7 +9,8 @@ h1 {
 }
 
 /* PC 버전 메뉴 - x축 정렬 */
-/* .media-menu {
+
+.media-menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -34,11 +35,11 @@ h1 {
     padding: 5px 15px;
     text-align: center;
 } 
-*/
+
 
 
 /* 모바일버전 메뉴 - y축 정렬 */
-/* 
+ 
 @media (min-width: 320px) and (max-width: 767px) {
     .media-menu {
         flex-direction: column;
@@ -54,13 +55,13 @@ h1 {
         margin-bottom: 0;
     }
 } 
-*/
+
 
 
 /* helbak.com 메뉴 pc버전 1줄-고정, 모바일 버전 2줄-비고정 */
 
 /* PC */
-/* 
+ 
 .intro {
     display: flex;
     position: fixed;
@@ -114,10 +115,9 @@ main {
 
     padding-top: 80px;
 } 
-*/
 
 /* 모바일 */
-/* 
+ 
 @media (min-width: 320px) and (max-width: 767px) {
     .intro {
         position: static;
@@ -137,7 +137,7 @@ main {
         padding-top: 0;
     }
 }
-*/
+
 
 
 /* bootstrap Portfolio 파트 콘텐츠 PC버전, 모바일버전 */
@@ -215,18 +215,3 @@ main {
         margin-bottom: 10px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
