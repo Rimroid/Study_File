@@ -3567,3 +3567,407 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
 #news-nav-bottom li {
     margin-right: 10px;
 }
+
+
+/* 네이버 뉴스 TV연예 */
+
+.ent-container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.ent-flex-start {
+    display: flex;
+	flex-wrap: wrap;    
+	align-items: center;
+}
+
+.ent-flex-center {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+.ent-flex-end {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+.ent-flex-between {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.ent-border {
+    border: solid 1px #000000;
+}
+
+
+/* TV연예 상단 */
+#ent-header {
+    width: 100%;
+    height: 62px;
+    background-color: #ffffff;
+    border-bottom: solid 2px #f1f1f1;
+
+    padding: 20px 25px 0;
+    
+}
+
+#ent-header .ent-header-left ul li {
+    font-size: 16px;
+    font-weight: 700;
+} 
+
+#ent-header .ent-header-left ul li a {    
+    color: #9f9f9f;
+} 
+
+#ent-header .ent-header-left ul li:first-child a {
+    color: #000;
+} 
+
+#ent-header .ent-header-left ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #dddddd;
+
+    margin: 0 8px;
+
+    vertical-align: -1px;
+}
+
+#ent-header .ent-header-left ul li:first-child a:before {
+    content: none;
+}
+
+
+#ent-header .ent-header-center ul li {
+    padding: 0 15px;
+    
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#ent-header .ent-header-center ul li a {
+    display: inline-block;
+    border-bottom: solid 2px #ffffff;
+
+    padding-bottom: 2px;
+}
+
+#ent-header .ent-header-center ul li.on a {
+    border-color: #e24587;
+    color: #e24587;
+}
+
+
+#ent-header .ent-header-right .btn-login {
+    width: 46px;
+    height: 20px;
+    border: solid 1px #444;
+
+    font-size: 12px;
+    color: #444;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 9px;
+}
+
+#ent-header .ent-header-right .btn-menu {
+    width: 16px;
+    height: 16px;
+    background-color: grey;
+
+    margin: 0 9px;
+}
+
+#ent-header .ent-header-right .btn-search {
+    width: 25px;
+    height: 25px;
+    background-color: #000000;
+    margin-left: 9px;
+}
+
+
+/* TV연예 메인 */
+#ent-main .ent-container {
+    overflow: hidden;
+}
+
+#ent-main .ent-left {
+    float: left;
+    width: 654px;
+    height: 2000px;
+    /* background-color: yellowgreen; */
+
+    padding-right: 24px;
+}
+
+#ent-main .ent-left #ent-media-headline {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #f1f1f1;
+}
+
+#ent-main .ent-left #ent-media-headline li {
+    width: 148px;
+    height: 204px;
+
+    border-radius: 10px;
+}
+
+#ent-main .ent-left #ent-media-headline a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#ent-main .ent-left #ent-media-headline .media-top {
+    position: relative;
+    height: 144px;
+}
+
+#ent-main .ent-left #ent-media-headline .media-top img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#ent-main .ent-left #ent-media-headline .media-top .time{
+    position: absolute;
+    display: block;
+    height: 16px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.56);
+    
+    padding: 0 4px;
+    right: 8px;
+    top: 8px;
+
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 16px;
+    
+}
+
+#ent-main .ent-left #ent-media-headline .media-top .icon-play {
+    position: absolute;
+    display: block;
+
+    width: 28px;
+    height: 28px;
+    background-color: grey;
+    border-radius: 50%;
+
+    left: 8px;
+    bottom: 7px
+}
+
+#ent-main .ent-left #ent-media-headline .media-bottom {
+    height: 60px;
+    background-color: #444a60;
+}
+
+#ent-main .ent-left #ent-media-headline .media-bottom p {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+    padding: 11px 12px 0;
+
+    color: #ffffff;
+}
+
+
+#ent-main .ent-left #ent-section-1 li {
+    border-bottom: solid 1px #f1f1f1;
+    padding: 20px 0;
+}
+
+#ent-main .ent-left #ent-section-1 li img {
+    width: 148px;
+    height: 90px;
+    border: solid 1px #000000;
+}
+
+#ent-main .ent-left #ent-section-1 li .ent-news-wrap {
+    width: 462px;
+}
+
+#ent-main .ent-left #ent-section-1 li .ent-news-wrap h3 {
+    margin-bottom: 8px;
+    
+    font-size: 14px;
+    font-weight: 700;    
+}
+
+#ent-main .ent-left #ent-section-1 li .ent-news-wrap p {
+    margin-bottom: 8px;
+    
+    font-size: 12px;
+    color: #898989;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+
+#ent-main .ent-left #ent-section-1 li .ent-news-wrap .bottom-wrap .source,
+#ent-main .ent-left #ent-section-2 .ent-bottom .source {
+    font-size: 11px;
+    font-weight: 400;
+    color: #a7a7a7;
+}
+
+#ent-main .ent-left #ent-section-1 li .ent-news-wrap .bottom-wrap .count,
+#ent-main .ent-left #ent-section-2 .ent-bottom .count {
+    display: inline-block;
+    
+    width: 20px;
+    height: 20px;
+    border: solid 1px #000000;
+    border-radius: 4px;
+    
+    text-align: center;
+    line-height: 20px;
+
+    font-size: 10px;
+}
+
+#ent-main .ent-left #ent-section-2 {
+    border-bottom: solid 1px #f1f1f1;
+    padding: 20px 0;    
+}
+
+#ent-main .ent-left #ent-section-2 li {
+    width: 200px;    
+}
+
+#ent-main .ent-left #ent-section-2 li a img {
+    width: 200px;
+    height: 122px;
+    border: solid 1px #000000;
+
+    margin-bottom: 15px;
+}
+
+#ent-main .ent-left #ent-section-2 li a h3 {
+    font-size: 13px;
+    line-height: 20px;
+
+    margin-bottom: 9px;
+}
+
+
+#ent-main .ent-left #ent-section-3 {
+    padding: 24px 0;
+    border-bottom: solid 1px #e4e4e4;
+}
+
+#ent-main .ent-left #ent-section-3 .title-wrap {
+    margin-bottom: 18px;
+}
+
+#ent-main .ent-left #ent-section-3 .title-wrap h3 {
+    font-size: 16px;
+}
+
+#ent-main .ent-left #ent-section-3 .right-wrap .count-wrap span {
+    font-size: 12px;
+    color: #666;
+}
+
+#ent-main .ent-left #ent-section-3 .right-wrap .count-wrap span em {
+    font-style: normal;
+    color: #ff0080;
+}
+
+#ent-main .ent-left #ent-section-3 .right-wrap .btn-wrap {
+    margin-left: 8px;
+}
+
+#ent-main .ent-left #ent-section-3 .right-wrap .btn-wrap .btn {
+    width: 24px;
+    height: 24px;
+    border: solid 1px #000000;
+}
+
+#ent-main .ent-left #ent-section-3 .right-wrap .btn-wrap .btn.btn-prev {
+    border-right: none;
+    background-color: blue;
+}
+
+#ent-main .ent-left #ent-section-3 .right-wrap .btn-wrap .btn.btn-next {
+    background-color: green;
+}
+
+
+#ent-main .ent-left #ent-section-3 li {
+    width: 148px;
+    height: 148px;
+    border: solid 1px #000000;
+}
+
+#ent-main .ent-left #ent-section-3 li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#ent-main .ent-left #ent-section-3 li img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+#ent-main .ent-left #ent-section-3 li span {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    background-color: #f40080;
+    
+    padding: 0 5px;
+
+    left: 0;
+    top: 0;
+
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#ent-main .ent-left #ent-section-3 li h3 {
+    position: absolute;
+    width: 100%;
+    min-height: 32px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    padding: 9px 10px 8px;
+    left: 0;
+    bottom: 0;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+#ent-main .ent-right {
+    float: right;
+    width: 324px;
+    height: 2000px;
+    background-color: pink;
+}
+
