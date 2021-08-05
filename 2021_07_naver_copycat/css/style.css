@@ -4684,3 +4684,470 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
 
     margin: 5px 5px 0 0 ;
 }
+
+
+/* 네이버게임 */
+.game-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.game-flex-start {
+    display: flex;
+	flex-wrap: wrap;	
+	align-items: center;	
+}
+
+.game-flex-end {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+.game-flex-between {
+    display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.game-flex-center {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+.game-shadow {
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 6%);
+}
+
+.game-p-30 {
+    padding: 30px;
+}
+
+.font-17 {
+    font-size: 17px;    
+}
+
+.font-19 {
+    font-size: 19px;
+}
+
+.font-w-400 {
+    font-weight: 400;
+}
+
+#game-body {
+    background-color: #f8f9fd;
+}
+
+/* 네이버게임 상단*/
+#game-header {
+    width: 100%;
+    background-color: #4e41db;
+}
+
+#game-header nav {
+    height: 60px;
+}
+
+#game-header nav .left h1 {
+    font-size: 20px;
+}
+
+#game-header nav .left h1 a {
+    color: #ffffff;
+}
+
+#game-header nav .left ul li a {
+    font-size: 18px;
+    color: #9da5b6;
+}
+
+#game-header nav .left ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    border-radius: .5px;
+    background-color: #9da5b6;
+    
+    margin: 0 12px;
+}
+
+
+#game-header nav .right .search-wrap {
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .28);
+
+    overflow: hidden;
+}
+
+#game-header nav .right .search-wrap input {
+    width: calc(100% - 38px);
+    height: 38px;
+    /* background-color: transparent; */
+    padding: 10px 12px 9px 14px;
+    border: none;
+
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#game-header nav .right .search-wrap input:focus {
+    outline: none;
+}
+
+#game-header nav .right .search-wrap .btn-search {
+    width: 38px;
+    height: 38px;
+    /* background-color: transparent; */
+    border: none;
+}
+
+#game-header nav .right .ticket-wrap {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    margin-left: 10px;
+}
+
+#game-header nav .right .ticket-wrap .btn-ticket {
+    display: block;
+    
+    width: 40px;
+    height: 40px;
+    border: solid 1px #ffffff;
+}
+
+#game-header nav .right .ticket-wrap .bubble-msg {
+    position: absolute;
+    width: 182px;
+    background-color: #677183;
+    border-radius: 8px;
+    
+    padding: 10px 12px;    
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+
+    z-index: 100;
+}
+
+#game-header nav .right .btn-login {
+    width: 60px;
+    border: solid 1px hsla(0, 0%, 80%, .3);
+    border-radius: 8px;
+
+    padding: 7px 0 6px;
+    margin-left: 10px;
+
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#game-header .game-events-wrap {
+    padding: 80px 0;
+}
+
+#game-header .game-events-wrap .event-wrap {
+    position: relative;
+    width: 407px;
+    height: 264px;
+    border-radius: 40px;
+
+    top: 0;
+    transition: top linear 0.2s;
+}
+
+#game-header .game-events-wrap .event-wrap:hover {
+    top: -10px;
+}
+
+#game-header .game-events-wrap .event-wrap.one {
+    background-color: rgb(120, 64, 81);
+}
+
+#game-header .game-events-wrap .event-wrap.two {
+    background-color: rgb(42, 44, 52);
+}
+
+#game-header .game-events-wrap .event-wrap.three {
+    background-color: rgb(237, 192, 75);
+}
+
+#game-header .game-events-wrap .event-wrap .event-title-wrap {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+
+    color: #ffffff;
+}
+
+#game-header .game-events-wrap .event-wrap .event-title-wrap span {
+    display: inline-block;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+
+    padding: 4px 8px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+#game-header .game-events-wrap .event-wrap .event-title-wrap h2 {
+    font-size: 20px;
+}
+
+
+/* 네이버게임 메인 */
+#game-main .game-container {
+    align-items: stretch;
+}
+
+
+/* 네이버게임 메인 왼쪽 */
+#game-main .left {
+    width: 900px;
+    height: 2000px;
+    background-color: yellowgreen;
+}
+
+#game-main .left .left-banner {
+    overflow: hidden;
+    width: 900px;
+    height: 120px;
+    border-radius: 12px;
+
+    margin-bottom: 24px;
+}
+
+#game-main .left .left-banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#game-main .left .left-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 네이버게임 section 공통 */
+.game-section {
+    position: relative;
+    
+    background-color: #ffffff;
+    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 6%);
+    border-radius: 12px;
+
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.game-section .section-title-wrap {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.game-section .section-title-wrap h2 {
+    font-size: 19px;
+    /* font-weight: 400; */
+}
+
+
+.game-section .section-middle-nav ul {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    
+    border-bottom: solid 1px rgba(0, 0, 0, 0.07);
+}
+
+.game-section .section-middle-nav li a{
+    display: block;
+    padding: 14px;
+    border-bottom: solid 3px transparent;
+    color: #777
+}
+
+.game-section .section-middle-nav li a.active {
+    border-bottom: solid 3px #7776ff;
+    font-weight: 700;
+    color: #7776ff;
+}
+
+
+.game-section .section-body-wrap {
+    margin-top: 18px;
+} 
+
+
+.game-section .btn-circle {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 6%);
+
+    bottom: -27.5px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.game-section .btn-circle.icon-arrow {
+    background-color: grey;
+}
+
+
+/* section-1 */
+#game-section-1 {
+    padding: 27px 30px 40px;
+}
+
+#game-section-1 .section-btn-wrap a {
+    font-size: 14px;
+    color: #9da5b6;
+    font-weight: 700;
+}
+
+#game-section-1 .section-btn-wrap a.active {
+    color: #777bff;
+}
+
+#game-section-1 .section-btn-wrap a:last-child {
+    margin-left: 14px;
+}
+
+#game-section-1 ol li {
+    padding: 10px 0;
+    border-bottom: solid 1px rgba(0, 0, 0, .03);
+}
+
+#game-section-1 li .game-thumbnail {
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#game-section-1 li .text-info {
+    width: 690px;
+    margin-right: 10px;
+}
+
+#game-section-1 li .text-info h3 {
+    margin-bottom: 3px;
+    
+    font-size: 16px;
+    font-weight: 600;    
+}
+
+#game-section-1 li .text-info .source-wrap .game {
+    font-size: 13px;
+    color: #858894;
+    margin-right: 5px;
+}
+
+#game-section-1 li .text-info .source-wrap .author {
+    font-size: 13px;
+    color: #858894;
+    margin-right: 5px;
+}
+
+#game-section-1 li .text-info .source-wrap .level {
+    font-size: 13px;
+    color: #858894;
+    margin-right: 5px;
+}
+
+#game-section-1 li .text-info .source-wrap .rank {
+    font-size: 13px;
+    color: #858894;
+}
+
+#game-section-1 li .blog-thumbnail {
+    border-radius: 8px;
+}
+
+
+/* section-2 */
+#game-section-2 .section-title-wrap .more {
+    font-size: 13px;
+    font-weight: 400;
+    color: #444;
+}
+
+#game-section-2 .section-body-wrap .image-txt {
+    width: 407.5px;
+}
+
+#game-section-2 .section-body-wrap .image-txt img {
+    width: 180px;
+    height: 100px;
+    border: solid 1px rgba(0, 0, 0, .06);
+    border-radius: 8px;
+
+    margin-right: 15px;
+}
+
+#game-section-2 .section-body-wrap .image-txt .txt {
+    width: 212px;
+}
+
+#game-section-2 .section-body-wrap .title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+
+    margin-bottom: 3px;
+}
+
+#game-section-2 .section-body-wrap .source {
+    font-size: 13px;
+    color: #999;
+}
+
+#game-section-2 .section-body-wrap ul {
+    margin-top: 25px;
+}
+
+#game-section-2 .section-body-wrap ul li {
+    margin-bottom: 11px;
+}
+
+#game-section-2 .section-body-wrap ul li:last-child {
+    margin-bottom: 0;
+}
+
+#game-section-2 .section-body-wrap ul .title {
+    width: 750px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+/* 네이버게임 메인 오른쪽 */
+#game-main .right {
+    width: 358px;
+    height: 2000px;
+    background-color: grey;
+}
