@@ -4727,6 +4727,11 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     padding: 30px;
 }
 
+
+.game-m-t-20 {
+    margin-top: 20px;
+}
+
 .font-17 {
     font-size: 17px;    
 }
@@ -4742,6 +4747,7 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
 #game-body {
     background-color: #f8f9fd;
 }
+
 
 /* 네이버게임 상단*/
 #game-header {
@@ -4922,8 +4928,7 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
 /* 네이버게임 메인 왼쪽 */
 #game-main .left {
     width: 900px;
-    height: 2000px;
-    background-color: yellowgreen;
+    padding-bottom: 200px;        
 }
 
 #game-main .left .left-banner {
@@ -4997,6 +5002,43 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     margin-top: 18px;
 } 
 
+.game-section .section-body-wrap .image-txt-wrap {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.game-section .section-body-wrap .image-wrap {
+    width: 407.5px;
+}
+
+.game-section .section-body-wrap .image-wrap img {
+    width: 180px;
+    height: 100px;
+    border: solid 1px rgba(0, 0, 0, .06);
+    border-radius: 8px;
+
+    margin-right: 15px;
+}
+
+.game-section .section-body-wrap .image-wrap .txt {
+    width: 212px;
+}
+
+.game-section .section-body-wrap .title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+
+    margin-bottom: 3px;
+}
+
+.game-section .section-body-wrap .source {
+    font-size: 13px;
+    color: #999;
+}
+
 
 .game-section .btn-circle {
     position: absolute;
@@ -5016,6 +5058,9 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     background-color: grey;
 }
 
+.game-section .btn-circle.icon-plus {
+    background-color: blue;
+}
 
 /* section-1 */
 #game-section-1 {
@@ -5093,36 +5138,6 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     color: #444;
 }
 
-#game-section-2 .section-body-wrap .image-txt {
-    width: 407.5px;
-}
-
-#game-section-2 .section-body-wrap .image-txt img {
-    width: 180px;
-    height: 100px;
-    border: solid 1px rgba(0, 0, 0, .06);
-    border-radius: 8px;
-
-    margin-right: 15px;
-}
-
-#game-section-2 .section-body-wrap .image-txt .txt {
-    width: 212px;
-}
-
-#game-section-2 .section-body-wrap .title {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 20px;
-
-    margin-bottom: 3px;
-}
-
-#game-section-2 .section-body-wrap .source {
-    font-size: 13px;
-    color: #999;
-}
-
 #game-section-2 .section-body-wrap ul {
     margin-top: 25px;
 }
@@ -5141,6 +5156,193 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
+/* section-3 */
+#game-section-3 {
+    padding-bottom: 40px;
+}
+
+#game-section-3 .section-body-wrap .image-wrap .category {
+    display: block;
+    
+    font-size: 13px;
+    color: #7776ff;
+    margin-bottom: 3px;
+}
+
+
+/* section-4 */
+#game-section-4 li a {
+    display: block;
+}
+
+#game-section-4 li a .image-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 263px;
+    height: 148px;
+    border-radius: 8px;
+}
+
+#game-section-4 .image-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#game-section-4 .image-wrap .icon-play {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+
+    left: 10px;
+    bottom: 12px;
+}
+
+#game-section-4 .image-wrap .time {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2px 6px;
+    border-radius: 6px;
+
+    color: #ffffff;
+    font-size: 14px;
+
+    right: 10px;
+    bottom: 10px;
+}
+
+#game-section-4 li a .image-txt {
+    width: 100%;
+    margin-top: 12px;    
+}
+
+#game-section-4 .image-txt h3 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#game-section-4 .image-txt .source,
+#game-section-4 .image-txt .count {
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* section-5 */
+#game-section-5 {
+    padding-bottom: 40px;
+}
+
+#game-section-5 .notice-wrap .icon-bang {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: yellow;
+    border-radius: 50%;
+
+    margin: 1px 3px 0 0;
+}
+
+#game-section-5 .notice-wrap .info {
+    font-size: 13px;
+    color: #999999;
+}
+
+#game-section-5 .section-body-wrap .image-wrap {
+    position: relative;
+    width: 190px;
+    height: 120px;
+}
+
+#game-section-5 .section-body-wrap .image-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-right: 0;
+}
+
+#game-section-5 .section-body-wrap .image-wrap .badge {
+    position: absolute;
+    display: inline-block;
+    background-color: #4e41db;
+    border-radius: 8px;
+    
+    padding: 4px 8px;
+    top: -5px;
+    left: -5px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#game-section-5 .section-body-wrap .image-wrap .badge.open {
+    background-color: red;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap {
+    margin-top: 12px;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap p {
+    margin-top: 2px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap span {
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* section-6 */
+#game-section-6 {
+    padding-bottom: 40px;
+}
+
+#game-section-6 .section-body-wrap .image-wrap img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+}
+
+#game-section-6 .section-body-wrap .txt {
+    width: 300px;
+}
+
+#game-section-6 .section-body-wrap .txt .title {
+    font-size: 15px;    
+}
+
+#game-section-6 .section-body-wrap .txt .info {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-size: 13px;
+    color: #666;
+}
+
+#game-section-6 .section-body-wrap .txt .member {
+    font-size: 11px;
+    color: #666;
+}
+
+
+
 
 
 
