@@ -5343,13 +5343,292 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
 
 
 
-
-
-
-
 /* 네이버게임 메인 오른쪽 */
 #game-main .right {
-    width: 358px;
-    height: 2000px;
+    width: 358px;    
+}
+
+
+/* 공통 영역 */
+.right-section {
+    background-color: #ffffff;
+    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 6%);
+    border-radius: 12px;
+
+    padding: 30px;
+    margin-bottom: 24px;    
+}
+
+.right-section .title-wrap h2 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.right-section .title-wrap a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #444;
+}
+
+.right-section .right-section-body {
+    margin-top: 20px;
+}
+
+
+/* 최근 방문 영역 */
+#visitor-section .text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#visitor-section .text-wrap p {    
+    font-size: 13px;
+    color: #9da5b6;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+#visitor-section .text-wrap .input-wrap {
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+    height: 44px;
+    background-color: #f5f6fa;
+    border-radius: 12px;
+
+    margin-top: 18px;    
+}
+
+#visitor-section .text-wrap .input-wrap input {    
+    width: calc(100% - 44px);
+    height: 100%;
+    background-color: transparent;
+    border: none;
+
+    padding: 10px 16px;
+
+    font-size: 15px;
+}
+
+#visitor-section .text-wrap .input-wrap input:focus {
+    outline: none;
+}
+
+#visitor-section .text-wrap .input-wrap button {    
+    width: 44px;
+    height: 100%;
     background-color: grey;
+}
+
+
+/* 인기 게임 라운지 TOP5 */
+.rank-section .right-section-body ol li {
+    margin-bottom: 16px;
+}
+
+.rank-section .right-section-body ol li a:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: grey;
+}
+
+.rank-section .right-section-body ol li:last-child {
+    margin-bottom: 0;
+}
+
+.rank-section .right-section-body li .count-wrap {
+    position: relative;
+    width: 25px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.rank-section .right-section-body .count-wrap .count {
+    font-size: 17px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.rank-section .right-section-body .count-wrap .count.red {
+    color: #ff4c51;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap {
+    position: absolute;
+    left: 3px;
+    bottom: -14px;
+}
+
+.rank-section .right-section-body .up-and-down-wrap .equal {
+    display: inline-block;
+    width: 5px;
+    height: 3px;
+    background-color: grey;
+
+    margin-left: 5px;
+}
+
+.rank-section .right-section-body .up-and-down-wrap span {
+    font-size: 10px;
+}
+
+.rank-section .right-section-body .up-and-down-wrap span:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 7px;
+    height: 3px;
+
+    top: -2px;
+    margin-right: 1px;
+}
+
+.rank-section .right-section-body .up-and-down-wrap .up {
+    color: red;
+}
+
+.rank-section .right-section-body .up-and-down-wrap .up:before {
+    background-color: red;
+}
+
+.rank-section .right-section-body .up-and-down-wrap .down {
+    color: blue;
+}
+
+.rank-section .right-section-body .up-and-down-wrap .down:before {
+    background-color: blue;
+}
+
+.rank-section .right-section-body li .image-wrap {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+.rank-section .right-section-body .image-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.rank-section .right-section-body .image-wrap .chk {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: grey;
+    border-radius: 50%;
+
+    top: -2px;
+    right: -2px;
+}
+
+.rank-section .right-section-body li .txt-wrap {
+    width: 192px;
+}
+
+.rank-section .right-section-body .txt-wrap h3 {
+    width: 141px;
+    font-size: 15px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin-right: 10px;
+}
+
+.rank-section .right-section-body .txt-wrap .genre {
+    font-size: 13px;
+    color: #999;
+}
+
+.rank-section .right-section-body .time {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* e스포츠 주요 뉴스 */
+#news-section .right-section-body ul {
+    width: 295px;
+}
+
+#news-section .right-section-body ul li {
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+#news-section .right-section-body ul li:last-child {
+    margin-bottom: 0;
+}
+
+#news-section .right-section-body li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#news-section .right-section-body li a::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #9da5b6;
+    
+    top: -5px;
+    margin-right: 5px;
+}
+
+
+/* 이번 주 신생 라운지 */
+#week-section .right-section-body ul li {
+    margin-bottom: 16px;
+}
+
+#week-section .right-section-body ul li:last-child {
+    margin-bottom: 0;
+}
+
+#week-section .right-section-body li img {
+    width: 128px;
+    height: 74px;
+    border-radius: 8px;
+
+    margin-right: 10px;
+}
+
+#week-section .right-section-body .txt-wrap h3 {
+    font-size: 15px;
+}
+
+#week-section .right-section-body .txt-wrap span {
+    font-size: 13px;
+    color: #999999;
+}
+
+
+/* 이용약관 */
+#game-footer-section a {
+    display: inline-block;    
+    font-size: 11px;
+    color: #666;
+}
+
+#game-footer-section a:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #ddd;
+    vertical-align: top;
+
+    margin: 4px 10px 0;
 }
