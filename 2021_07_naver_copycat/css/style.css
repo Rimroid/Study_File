@@ -5677,6 +5677,8 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
 
     left: 0;
     top: 0;
+
+    z-index: 99999;
 }
 
 #esport-header #esport-nav a {
@@ -5870,9 +5872,342 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     color: #ffffff;    
 }
 
+#esport-main .content-wrap {
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+/* 메인 left 영역 */
+#esport-main .left {
+    float: left;
+    width: 900px;
+}
+
+#esport-main-article {
+    overflow: hidden;
+    width: 100%;
+    height: 468px;
+    background-color: grey;
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+}
+
+#esport-main-article .article {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+#esport-main-article .article.full {
+    height: 100%;    
+}
+
+#esport-main-article .article img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#esport-main-article .article .txt-wrap {
+    position: absolute;
+    width: 100%;
+
+    padding: 0 24px 20px;
+
+    left: 0;
+    bottom: 0;
+
+    color: #ffffff;
+}
+
+#esport-main-article .article .txt-wrap h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+#esport-main-article .article .txt-wrap p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    
+    max-height: 57px;    
+    
+    margin-top: 5px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+#esport-main-article .article .txt-wrap .source {
+    display: block;
+    margin-top: 10px;
+    
+    font-size: 13px;
+
+    color: hsla(0, 0, 100%, .7);
+}
+
+.esport-section {
+    padding: 30px 0 20px;
+    margin-bottom: 30px;
+    border-top: solid 1px grey;
+}
+
+.esport-section .title-wrap {
+    padding: 15px 0;
+}
+
+.esport-section .title-wrap h2 {
+    font-size: 18px;
+}
+
+
+#esport-replay .game-menu {
+    margin-bottom: 24px;
+}
+
+#esport-replay .game-menu ul li {
+    margin-right: 20px;
+}
+
+#esport-replay .game-menu ul li:last-child {
+    margin-right: 0;
+}
+
+#esport-replay .game-menu li a {
+    display: block;
+    width: 60px;
+    /* height: 82px; */
+
+    text-align: center;
+}
+
+#esport-replay .game-menu li a.active i {
+    background-color: purple;
+}
+
+#esport-replay .game-menu li a.active span {
+    color: purple;
+}
+
+#esport-replay .game-menu li i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    border-radius: 50%;
+
+    margin-bottom: 6px;
+}
+
+#esport-replay .game-menu li span {
+    font-size: 13px;    
+}
+
+
+#esport-replay .play-lists li {
+    width: 285px;    
+    margin-bottom: 24px;
+}
+
+#esport-replay .play-lists li:nth-child(4),
+#esport-replay .play-lists li:nth-child(5),
+#esport-replay .play-lists li:nth-child(6) {
+    margin-bottom: 0;
+}
+
+#esport-replay .play-lists li a {
+    display: block;
+}
+
+#esport-replay .play-lists li a .image-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    
+    margin-bottom: 11px;
+}
+
+#esport-replay .play-lists li .image-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+}
+
+#esport-replay .play-lists li .image-wrap .status-wrap {
+    position: absolute;
+    width: 100%;
+
+    left: 0;
+    bottom: 0;
+
+    padding: 10px;
+}
+
+#esport-replay .play-lists li .image-wrap .status-wrap i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+}
+
+#esport-replay .play-lists li .image-wrap .status-wrap .time {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+
+    padding: 3px 5px;
+
+    font-size: 11px;
+    color: #ffffff;
+}
+
+#esport-replay .play-lists li h3 {
+    font-size: 15px;
+}
+
+
+#esport-news .article-wrap {
+    align-items: flex-start;
+}
+
+#esport-news .article-wrap .left-lists {
+    width: 476px;
+}
+
+#esport-news .article-wrap .left-lists li {
+    width: 226px;
+}
+
+#esport-news .article-wrap .left-lists li a{
+    display: block;
+}
+
+#esport-news .article-wrap .left-lists li img {
+    width: 100%;
+    height: 132px;
+
+    margin-bottom: 9px;
+}
+
+#esport-news .article-wrap .left-lists li h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+
+    margin-bottom: 4px;
+}
+
+#esport-news .article-wrap .left-lists p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 38px;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;    
+    
+    font-size: 14px;
+    color: #777;    
+}
+
+#esport-news .article-wrap .right-lists {
+    width: 400px;    
+}
+
+#esport-news .article-wrap .right-lists li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#esport-news .article-wrap .right-lists li::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: grey;
+    border-radius: 50%;
+
+    top: 8px;
+}
+
+#esport-news .article-wrap .right-lists li a{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    padding-left: 15px;
+    
+    font-size: 16px;    
+}
+
+
+#esport-expert .news-lists li {
+    width: 450px;
+    margin-bottom: 15px;
+}
+
+#esport-expert .news-lists li:nth-child(3),
+#esport-expert .news-lists li:nth-child(4) {
+    margin-bottom: 0;
+}
+
+#esport-expert .news-lists li img {
+    width: 153px;
+    height: 86px;
+    border-radius: 5px;
+
+    margin-right: 15px;
+}
+
+#esport-expert .news-lists li .txt-wrap {
+    width: 268px;
+}
+
+#esport-expert .news-lists li .txt-wrap h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#esport-expert .news-lists li .txt-wrap p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 38px;    
+
+    margin-top: 4px;
+    
+    font-size: 14px;
+    color: #777;
+    line-height: 19px;   
+}
+
+#esport-expert .news-lists li .txt-wrap .source {
+    font-size: 13px;
+    color: #777777;
+}
 
 
 
 
-
-
+/* 메인 right 영역 */
+#esport-main .right {
+    float: right;
+    width: 357px;
+    height: 2000px;
+    background-color: wheat;
+}
