@@ -6377,3 +6377,143 @@ main #blog-wrap .blog-media-wrap ul .blog-media-info span {
     font-size: 15px;
     font-weight: 700;
 }
+
+
+/* 오디오클립 */
+/* 공통영역 */
+.audio-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.audio-flex-start {
+    display: flex;
+	flex-wrap: wrap;	
+	align-items: center;	
+}
+
+.audio-flex-center {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.audio-flex-end {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.audio-flex-between {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/* 오디오클립 상단 */
+#audio-header {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid 1px #efeff4;
+
+    left: 0;
+    top: 0;
+
+    z-index: 99999;
+}
+
+#audio-header .audio-nav-left {
+    width: 700px;
+}
+
+#audio-header .audio-nav-left .audio-logo {
+    font-size: 25px;
+}
+
+#audio-header .audio-nav-left ul {
+    padding-top: 10px;
+}
+
+#audio-header .audio-nav-left li a {    
+    display: block;
+    font-size: 17px;
+    padding: 12px 13px 17px 12px;    
+}
+
+#audio-header .audio-nav-left li a.active {
+    font-weight: 700;
+}
+
+#audio-header .audio-nav-left li a span {
+    position: relative;
+    display: inline-block;
+    height: 21px;
+}
+
+#audio-header .audio-nav-left li a.active span::after{
+    display: block;
+    position: absolute;
+    content: '';     
+    border-bottom: solid 3px #222222;
+    border-radius: 1.5px;
+
+    z-index: 1;
+
+    left: -4.5px;
+    right: -5.5px;
+    bottom: -22px;
+}
+
+#audio-header .audio-nav-right {
+    width: 350px;
+}
+
+#audio-header .audio-nav-right .search-wrap {
+    width: 180px;
+    height: 40px;
+    background-color: #ffffff;
+    border: solid 2px rgba(0, 86, 201, .2);
+    border-radius: 4px;
+}
+
+#audio-header .audio-nav-right .search-wrap .icon-search {
+    width: 40px;
+    height: 100%;
+    background-color: yellowgreen;    
+}
+
+#audio-header .audio-nav-right .search-wrap input {
+    width: calc(100% - 40px);
+    height: 100%;
+
+    padding: 8px 5px;
+
+    font-size: 15px;
+
+    outline: none;
+    border: none;
+}
+
+#audio-header .audio-nav-right .search-wrap input::placeholder {
+    color: grey;
+}
+
+#audio-header .audio-nav-right .search-wrap input:focus {
+    outline: none;
+}
+
+#audio-header .audio-nav-right .profile-wrap .profile-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#audio-header .audio-nav-right .profile-wrap .btn-login {
+    font-size: 15px;
+    padding-left: 8px;
+}
