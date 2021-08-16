@@ -35,7 +35,7 @@
 
                 <div class="audio-nav-right audio-flex-between">
                     <div class="search-wrap audio-flex-start">
-                        <i class="icon-search"></i>
+                        <img src="img/magnifier.png" class="icon-search">
                         <input type="text" placeholder="무엇을 찾으세요?">
                     </div>
 
@@ -53,12 +53,401 @@
     <!-- 오디오클립 메인 -->
     <main id="audio-main" role="main">
 
-        <div class="audio-container">
+        <div class="audio-container audio-flex-between">
 
+            <!-- 오디오클립 메인 왼쪽 -->
             <div class="audio-main-left">
+                
+                <div id="audio-today" class="audio-section">
+                    
+                    <div class="audio-header">
+                        <h2>오늘의 오디오클립</h2>
+                    </div>
+
+                    <div class="audio-body">
+                        
+                        <div class="audio-slide-wrap">
+                            <a href="#">
+
+                                <div class="audio-slide audio-flex-start">
+                                    <img src="https://via.placeholder.com/415x198">
+                                    <div class="txt-wrap">
+                                        <h3>현대지성 고전문학 70% 할인</h3>
+                                        <p>명상록, 톨스토이 고백록 외 6권을 들어보세요!</p>
+                                    </div>
+                                </div>
+                                
+                            </a>
+
+                            <button type="button" class="btn btn-left"></button>
+                            <button type="button" class="btn btn-right"></button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div id="audio-original" class="audio-section">
+
+                    <div class="audio-header">
+                        <h2>오디오클립 추천 오리지널</h2>
+                    </div>
+
+                    <div class="audio-body">
+
+                        <ul class="audio-flex-between">
+                            <li>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>하지현의 하트 : 마음 이야기</h3>
+                                    <span class="author">하지현의 하트</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author">author</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author">author</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author">author</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author">author</span>                                                                       
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-right"></button>
+                    </div>
+
+                </div>
+
+                <div id="audio-playlist" class="audio-section">
+
+                    <div class="audio-header">
+                        <h2>나를 위한 플레이리스트</h2>
+                        <p>당신을 위해 매일 새롭게 업데이트 됩니다.</p>
+
+                        <a href="#" class="link-total">전체보기</a>
+                
+                    </div>
+
+                    <div class="audio-body">
+
+                        <ul class="audio-flex-between">
+                            <li>
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="https://via.placeholder.com/152">
+                                        <i class="icon-play"></i>                                        
+                                    </div>
+
+                                    <h3>이번주 베스트 추천</h3>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="https://via.placeholder.com/152">
+                                        <i class="icon-play"></i>                                        
+                                    </div>
+
+                                    <h3>KBS 뉴스</h3>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="https://via.placeholder.com/152">
+                                        <i class="icon-play"></i>                                        
+                                    </div>
+
+                                    <h3>마음주치의</h3>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="https://via.placeholder.com/152">
+                                        <i class="icon-play"></i>                                        
+                                    </div>
+
+                                    <h3>데일리 증시</h3>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-right"></button>
+                    </div>
+
+
+                </div>
+
+                <div id="audio-live" class="audio-section">
+
+                    <div class="audio-header">
+                        <h2>라이브 ON</h2>
+                    </div>
+
+                    <div class="audio-body">
+
+                        <ul class="audio-flex-between">
+                            <li class="active">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <div class="live-state">
+                                            <span class="live">LIVE</span>
+                                        </div>                                        
+                                    </div>                                    
+                                    
+                                    <h3>빗소리 ASMR 잠못드는 밤</h3>
+                                    <span class="time">라이브 중</span>                                                                       
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <div class="live-state">
+                                            <span class="live">LIVE</span>
+                                        </div>                                        
+                                    </div>                                    
+                                    
+                                    <h3>[Live] 오늘아침 라이브</h3>
+                                    <span class="time">8.17. 7:30 예정</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <div class="live-state">
+                                            <span class="live">LIVE</span>
+                                        </div>                                        
+                                    </div>                                    
+                                    
+                                    <h3>[삼성전자x다사소] 갤럭시 Z Flip 3</h3>
+                                    <span class="time">8.16. 14:00 예정</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <div class="live-state">
+                                            <span class="live">LIVE</span>
+                                        </div>                                        
+                                    </div>                                    
+                                    
+                                    <h3>20210817 장중 종목점검</h3>
+                                    <span class="time">8.17. 9:00 예정</span>                                                                       
+                                </a>
+                            </li>
+
+                            <li class="active">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <div class="live-state">
+                                            <span class="live">LIVE</span>
+                                        </div>                                        
+                                    </div>                                    
+                                    
+                                    <h3>불멍 ASMR 모닥불</h3>
+                                    <span class="time">라이브 중</span>                                                                       
+                                </a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+
+                </div>
+
+                <div id="audio-book" class="audio-section">
+
+                    <div class="audio-header">
+                        <h2>주간 베스트 오디오북 TOP 100</h2>
+                    </div>
+
+                    <div class="audio-body">
+
+                        <ul class="audio-flex-between">
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <span class="time">4시간 55분</span>                                                                                
+                                    </div>                                    
+                                    
+                                    <h3>자기만의 방 (민음사 세계문학,완독본)</h3>
+                                    <span class="author-1">버지니아 울프 저</span>                                                                       
+                                    <span class="author-2">천지선 낭독</span>                                                                       
+                                    <span class="price">대여 3,000원</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <span class="time">4시간 55분</span>                                                                                
+                                    </div>                                    
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author-1">저자</span>                                                                       
+                                    <span class="author-2">낭독</span>                                                                       
+                                    <span class="price">대여 3,000원</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120x110">
+                                        <span class="time">4시간 55분</span>                                                                                
+                                    </div>                                    
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author-1">저자</span>                                                                       
+                                    <span class="author-2">낭독</span>                                                                       
+                                    <span class="price">대여 3,000원</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120">
+                                        <span class="time">4시간 55분</span>                                                                                
+                                    </div>                                    
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author-1">저자</span>                                                                       
+                                    <span class="author-2">낭독</span>                                                                       
+                                    <span class="price">대여 3,000원</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="https://via.placeholder.com/120x140">
+                                        <span class="time">4시간 55분</span>                                                                                
+                                    </div>                                    
+                                    
+                                    <h3>Title 1</h3>
+                                    <span class="author-1">저자</span>                                                                       
+                                    <span class="author-2">낭독</span>                                                                       
+                                    <span class="price">대여 3,000원</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        
+                        <button type="button" class="btn btn-right"></button>
+                    </div>
+
+                </div>
+
+                <div id="audio-channel" class="audio-section">
+
+                    <div class="audio-header">
+                        <h2>새로 나온 채널</h2>
+                    </div>
+
+                    <div class="audio-body">
+
+                        <ul class="audio-flex-between">
+                            <li>
+                                <a href="#">                                   
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>향기나는 편지</h3>
+                                    <span class="author">향기나는편지</span>                                    
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">                                   
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>향기나는 편지</h3>
+                                    <span class="author">향기나는편지</span>                                    
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">                                   
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>향기나는 편지</h3>
+                                    <span class="author">향기나는편지</span>                                    
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">                                   
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>향기나는 편지</h3>
+                                    <span class="author">향기나는편지</span>                                    
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">                                   
+                                    <img src="https://via.placeholder.com/120">
+                                    
+                                    <h3>향기나는 편지</h3>
+                                    <span class="author">향기나는편지</span>                                    
+                                </a>
+                            </li>
+
+                        </ul>
+                        
+                        <button type="button" class="btn btn-right"></button>
+                    </div>
+
+                </div>
 
             </div>
 
+            <!-- 오디오클립 메인 오른쪽 -->
             <div class="audio-main-right">
                 
             </div>
