@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1320px;
+}
+
+/* Flex 기본 */
+.flex-align-start {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;	
+}
+
+.flex-align-end {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-end;
+	align-items: center;	
+}
+
+.flex-align-between {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: center;	
+}
+
+/* 유튜브 상단 메뉴 */
+#youtube-top-nav {
+    position: fixed;
+
+    width: 100%;
+    height: 56px;
+    background-color: #212121;
+
+    padding: 0 16px;
+}
+
+#youtube-top-nav .nav-left {
+    height: 56px;
+}
+
+#youtube-top-nav .nav-left .btn-menu {
+    width: 24px;
+    height: 24px;
+    background-color: yellowgreen;   
+}
+
+#youtube-top-nav .nav-left h1 {
+    margin-left: 16px;
+}
+
+#youtube-top-nav .nav-left h1 a img {
+    width: 90px;
+    height: 20px;
+}
+
+
+#youtube-top-nav .nav-right .btn-menu {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+}
+
+#youtube-top-nav .nav-right .btn-menu.btn-menu-1 {
+    background-color: grey;
+}
+
+#youtube-top-nav .nav-right .btn-menu.btn-menu-2 {
+    background-color: yellowgreen;
+}
+
+#youtube-top-nav .nav-right .btn-login {
+    border: solid 1px #3ea6ff;    
+
+    padding: 10px 12px;
+
+    font-size: 14px;
+    color: #3ea6ff;
+}
+
+
+#youtube-top-nav .nav-center {
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#youtube-top-nav .nav-center .search-wrap {
+    width: 640px;
+    height: 30px;    
+}
+
+#youtube-top-nav .nav-center .search-wrap input {
+    width: calc(100% - 65px);
+    height: 30px;
+    border: solid 1px grey;
+    background-color: #212121;
+
+    padding: 6px 6px;
+
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#youtube-top-nav .nav-center .search-wrap .btn-search {
+    width: 65px;
+    height: 30px;    
+    border: solid 1px grey;
+    background-color: grey;
+}
+
+#youtube-top-nav .nav-center .btn-voice {
+    width: 24px;
+    height: 24px;
+    background-color: blue;
+
+    margin-left: 16px;
+}
+
+/* 유튜브 왼쪽 사이드 메뉴*/
+#youtube-left-nav {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+
+    width: 240px;
+    background-color: #212121;
+
+    top: 56px;
+    left: 0;
+    bottom: 0;
+}
+
+#youtube-left-content {
+    position: absolute;
+    width: 225px;
+    height: 100%;
+    background-color: grey;
+}
+
+/* 유튜브 메인 */
+#youtube-main {
+    position: absolute;
+    
+    background-color: grey;
+    
+    top: 56px;
+    left: 240px;
+    right: 0;
+    bottom: 0;
+
+}
