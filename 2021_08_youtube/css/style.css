@@ -66,6 +66,8 @@ input:focus {
     background-color: #212121;
 
     padding: 0 16px;
+
+    z-index: 99999;
 }
 
 #youtube-top-nav .nav-left {
@@ -166,6 +168,8 @@ input:focus {
     top: 56px;
     left: 0;
     bottom: 0;
+
+    z-index: 99999;
 }
 
 #youtube-left-content {
@@ -265,7 +269,7 @@ input:focus {
 #youtube-main {
     position: absolute;
     
-    background-color: grey;
+    background-color: #181818;
     
     top: 56px;
     left: 240px;
@@ -283,12 +287,11 @@ input:focus {
     width: 100%;
     height: 100%;
     align-items: flex-start;
+    align-content: flex-start;
 }
 
 #youtube-main-content ul li {
     width: 24%;
-    background-color: yellowgreen;
-
     margin-bottom: 40px;
 }
 
@@ -320,6 +323,7 @@ input:focus {
 }
 
 #youtube-main-content li .video-txt-wrap {
+    align-items: flex-start;
     margin-top: 12px;
 }
 
@@ -342,32 +346,308 @@ input:focus {
 }
 
 #youtube-main-content li .video-txt-wrap .txt h3 {
-    display: inline-block;
+    margin-bottom: 8px;
     
-    margin-bottom: 6px;
     font-size: 15px;
+    line-height: 18px;
 }
 
 #youtube-main-content li .video-txt-wrap .txt h3 .title-link {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-height: 50px;
+    
+    padding-right: 20px;
+    
     color: #ffffff;
 }
 
 #youtube-main-content li .video-txt-wrap .txt p  {
-    
+    max-width: 165px;
+    font-size: 13px;
 }
 
 #youtube-main-content li .video-txt-wrap .txt p .channel-link {
-    
-}
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-#youtube-main-content li .video-txt-wrap .txt .txt-bottom {
-    
+    margin-bottom: 5px;
+
+    color: gray;
 }
 
 #youtube-main-content li .video-txt-wrap .txt .txt-bottom .count {
+    font-size: 13px;
+    color: grey;
+}
+
+#youtube-main-content li .video-txt-wrap .txt .txt-bottom .count::after {
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: gray;
     
+    margin: 4px 4px 0 8px ;
+
+    vertical-align: 2px;
 }
 
 #youtube-main-content li .video-txt-wrap .txt .txt-bottom .date {
+    font-size: 13px;
+    color: grey;
+}
+
+
+/* 유튜브 채널 페이지*/
+/* 채널 콘텐츠 영역 */
+.channel-container {
+    width: 1284px;
+    margin: 0 auto;
+}
+
+#youtube-channel-content #channel-banner {
+    width: 100%;
+    height: 250px;
+    background-color: darkblue;
+}
+
+#channel-header {
+    background-color: rgba(24, 24, 24, 1);
+    padding: 16px 0 4px;
+}
+
+#channel-header .channel-profile-wrap .channel-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    margin-right: 24px;
+}
+
+#channel-header .channel-profile-wrap .channel-profile .txt-wrap h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#channel-header .channel-profile-wrap .channel-profile .txt-wrap p {
+    margin-top: 10px;
+    
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+#channel-header .channel-profile-wrap .btn-subscribe {
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 5px;
+
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+#channel-nav {
+    background-color: rgba(24, 24, 24, 1);
+}
+
+#channel-nav ul li a {
+    display: block;
+    height: 47px;    
+
+    padding: 0 32px;
+
+    line-height: 47px;
+
+    border-bottom: solid 3px transparent;
+    color: #aaaaaa;
+}
+
+#channel-nav ul li a:hover {
+    color: #ffffff;
+}
+
+#channel-nav ul li a.active {
+    border-bottom: solid 3px #ffffff;
+    color: #ffffff;
+}
+
+#channel-content {
+    background-color: rgba(15, 15, 15, 1);
+}
+
+#channel-recent {
+    padding: 24px 0;
+    align-items: flex-start;
+    border-bottom: solid 1px #aaaaaa;  
+}
+
+#channel-recent .thumbnail-wrap {
+    position: relative;
+    width: 246px;
+    height: 148px;
+    margin-right: 16px;
+}
+
+#channel-recent .thumbnail-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+#channel-recent .thumbnail-wrap .mark {
+    position: absolute;
+    background-color: red;
+    border-radius: 5px;
+    
+    padding: 4px 8px;
+
+    font-size: 12px;
+    color: #ffffff;
+
+    right: 4px;
+    bottom: 4px;
+}
+
+#channel-recent .txt-wrap {
+    width: 600px;
+}
+
+#channel-recent .txt-wrap h2 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+#channel-recent .txt-wrap .channel {
+    position: relative;
+    padding-top: 6px;
+    font-size: 14px;
+    color: #aaaaaa;    
+}
+
+#channel-recent .txt-wrap .description {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.45;
+}
+
+
+.channel-playlists-section {
+    padding: 24px 0 ;
+    border-bottom: solid 1px grey;
+}
+
+.channel-playlists-section .playlists-header {
     
 }
+
+.channel-playlists-section .playlists-header h3 {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.channel-playlists-section .playlists-header .play-wrap {
+    width: 90px;    
+}
+
+.channel-playlists-section .playlists-header .play-wrap .icon-play {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+}
+
+.channel-playlists-section .playlists-header .play-wrap .play-link {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #aaaaaa;    
+}
+
+.channel-playlists-section .playlists-body {
+    margin-top: 24px;
+}
+
+.channel-playlists-section .playlists-body ul {
+
+}
+
+.channel-playlists-section .playlists-body ul li {
+    width: 210px;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail {
+    width: 100%;
+    height: 118px;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail a img {
+    width: 100%;
+    height: 100%;
+}
+
+.channel-playlists-section .playlists-body li .channel-thumbnail a .time {
+    position: absolute;
+
+    font-size: 12px;
+    color: #ffffff;
+    background-color: black;
+    padding: 4px 8px 6px;
+    border-radius: 5px;
+
+    bottom: 4px;
+    right: 4px;
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap {
+    margin-top: 12px;
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap h3 {
+    margin-bottom: 6px;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap h3 .title-link {
+    color: #ffffff;
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap p {
+    margin-bottom: 5px;
+    font-size: 12px;  
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap p .channel-link {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #aaaaaa;
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap .txt-bottom {
+
+}
+
+.channel-playlists-section .playlists-body li .channel-txt-wrap .txt-bottom .count,
+.channel-playlists-section .playlists-body li .channel-txt-wrap .txt-bottom .date {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
