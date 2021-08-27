@@ -773,18 +773,6 @@ input:focus {
     content: none;
 }
 
-#popular-section .txt-wrap .video-info .channel {
-    
-}
-
-#popular-section .txt-wrap .video-info .count {
-    
-}
-
-#popular-section .txt-wrap .video-info .date {
-    
-}
-
 #popular-section .txt-wrap .description {
     display: -webkit-box;
     -webkit-line-clamp: 2;
