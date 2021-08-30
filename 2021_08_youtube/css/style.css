@@ -369,7 +369,7 @@ input:focus {
 
 #youtube-main-content li .video-txt-wrap .txt p  {
     max-width: 165px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 #youtube-main-content li .video-txt-wrap .txt p .channel-link {
@@ -380,12 +380,13 @@ input:focus {
 
     margin-bottom: 5px;
 
-    color: gray;
+    color: #aaaaaa;
 }
 
-#youtube-main-content li .video-txt-wrap .txt .txt-bottom .count {
-    font-size: 13px;
-    color: grey;
+#youtube-main-content li .video-txt-wrap .txt .txt-bottom .count,
+#youtube-main-content li .video-txt-wrap .txt .txt-bottom .date {
+    font-size: 12px;
+    color: #aaaaaa;
 }
 
 #youtube-main-content li .video-txt-wrap .txt .txt-bottom .count::after {
@@ -394,17 +395,13 @@ input:focus {
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: #aaaaaa;
     
     margin: 4px 4px 0 8px ;
 
     vertical-align: 2px;
 }
 
-#youtube-main-content li .video-txt-wrap .txt .txt-bottom .date {
-    font-size: 13px;
-    color: grey;
-}
 
 
 /* 유튜브 채널 페이지*/
