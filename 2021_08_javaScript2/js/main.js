@@ -183,4 +183,143 @@ console.log(lv);
 */
 
 
+// 렉시컬 스코핑(Lexical scoping)
 // 함수는 서로의 스코프에 접근할 수 없다!!!!
+/*
+function a() {
+    var apple = "사과";
+}
+
+function b() {
+    a();
+    console.log(apple);    
+}
+
+b();
+*/
+
+
+// 스코프 체인
+/*
+var a = 10;
+
+function func1() {
+
+    var b = 20;
+
+    function func2() {
+        var c = 30;
+
+        console.log(a + b + c);
+    }
+
+    func2();
+
+}
+
+func1();
+*/
+
+
+// 렉시컬 스코핑(Lexical scoping)
+/*
+var name = "Chaeeop";
+
+function func1() {
+    console.log(name);
+}
+
+function func2() {
+    var name = "Rim";
+
+    func1();  // console.log(name) (x)
+}
+
+func2();
+*/
+
+
+// 호이스팅
+// 변수 호이스팅
+/*
+console.log(a);
+
+var a;
+a = "나는 A다.";
+
+console.log(a);
+
+
+console.log(b);
+
+var b = "나는 B다";
+
+console.log(b);
+*/
+
+
+// 함수 호이스팅
+
+/*
+function func1() {
+    console.log("Func1 함수다.");
+}
+*/
+/*
+func1();
+
+function func1() {
+    console.log("Func1 함수다.");
+}
+*/
+// func1();
+
+
+// var func2 = undefined;
+/*
+func2();
+
+var func2 = function () {
+    console.log("Func2 함수다");
+}
+
+// func2();
+*/
+
+
+
+// Math
+// console.log(Math);
+/*
+var num1 = Math.abs(-3);
+console.log(num1);
+
+var num2 = Math.ceil(0.3);
+console.log(num2);
+
+var num3 = Math.floor(10.9);
+console.log(num3);
+
+var num4 = Math.random();
+console.log(num4);
+*/
+
+
+// parseInt() - 정수형, parseFloat() - 실수형
+// String -> Number
+/*
+var str1 = "20.6";
+var str2 = "3.14";
+
+console.log(typeof str1);
+console.log(typeof str2);
+
+
+var num1 = parseInt(str1);
+var num2 = parseFloat(str2);
+
+console.log(num1);
+console.log(typeof num1);
+console.log(num2);
+console.log(typeof num2);
+*/
