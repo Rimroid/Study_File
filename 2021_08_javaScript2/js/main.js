@@ -323,3 +323,154 @@ console.log(typeof num1);
 console.log(num2);
 console.log(typeof num2);
 */
+
+
+// 반복문
+// 고정값 : console.log(2 * );
+// 일정한 규칙을 갖고 있는 가변값  : 1, 2, 3, 4, 5, 6, 7, 8, 9
+/*
+console.log(2 * 1);
+console.log(2 * 2);
+console.log(2 * 3);
+console.log(2 * 4);
+console.log(2 * 5);
+console.log(2 * 6);
+console.log(2 * 7);
+console.log(2 * 8);
+console.log(2 * 9);
+*/
+
+//while
+/*
+var num = 1; // 2, 3, 4 ... 10
+
+while (num < 10) {
+    // 2 * 1 = 2
+    // 2 * 2 = 4 ...
+    // 2 * 9 = 18
+    // num = 10이 되면 반복문 종료
+    console.log(2 * num);
+    num++;
+}
+
+console.log("반복문 종료");
+*/
+
+
+// do ~ while
+/*
+var i = 12;
+
+do {
+    console.log(i);
+    i++;    
+} while (i < 10);
+*/
+
+
+// 고정값
+// 일정한 규칙을 갖고 있는 가변값
+// for
+/*
+for (var i = 1; i < 10; i++) {
+    console.log(3 * i);
+}
+*/
+
+
+// 중첩 반복문
+// 중첩 for
+
+// 2단 ~ 9단
+/*
+for (i = 2; i < 10; i++) {
+    for(j = 1; j < 10; j++) {
+        console.log( i * j);
+    }
+}
+*/
+
+
+// break, continue
+/*
+for (var i = 1; i < 10; i++) {
+    
+    if(i === 5) {
+        break;
+    }
+
+    console.log(2 * i);
+}
+*/
+/*
+for (var i = 1; i < 10; i++) {
+    
+    if(i === 5) {
+        continue;
+    }
+
+    console.log(3 * i);
+}
+*/
+
+/*
+var arr = ['바나나', '사과', '수박', '포도', '배'];
+console.log(arr);
+console.log(arr.length);
+
+// 고정값 console.log(arr[]);
+// 가변값 : 0, 1, 2
+
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
+*/
+
+
+// for ~ in
+/*
+var arr = ['바나나', '사과', '수박', '포도', '배'];
+
+for (var i in arr) {
+    console.log(i);
+    console.log(arr[i]);
+}
+*/
+
+
+// arr.forEach()
+// 익명함수, 콜백함수를 사용함
+/*
+var arr = ['야구', '축구', '농구', '배구'];
+
+arr.forEach(function(element, index) {
+    console.log(element);
+    console.log(index);
+})
+*/
+
+
+// arr.map()
+
+// var arr = ['기타', '드럼', '베이스', '보컬'];
+/*
+arr.map(function(element, index) {
+    console.log(element);
+    console.log(index);
+})
+*/
+/*
+var result = arr.map(function(element, index) {
+    return element + " " + "10";    
+})
+
+console.log(result);
+*/
+
+
+// 객체에서 활용할 수 있는 반복문
+
