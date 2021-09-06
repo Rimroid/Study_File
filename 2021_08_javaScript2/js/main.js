@@ -473,4 +473,162 @@ console.log(result);
 
 
 // 객체에서 활용할 수 있는 반복문
+/*
+var student = {
+    name: "Kim",
+    age: 20,
+    skills: ["자바스크립트", "HTML", "CSS"],
+    
+    sum: function(num1, num2) {
+        console.log(num1 + num2);
+    }
+}
 
+// for ~ in
+// student.name
+// student['name'];
+
+for (var prop in student) {
+
+    console.log(prop + " = " + student[prop]);
+    // console.log(student[prop]);
+}
+*/
+
+
+// 배열 : forEach(), map(), length
+
+// 문자열 String이 가지고 있는 주요 기능
+// length;
+
+// var txtLength = " Hello world ! ";
+
+// console.log(txtLength);
+// console.log(txtLength.length);
+// console.log(txtLength.trim());
+// console.log(txtLength.trim().length);
+
+
+// trim()의 활용
+/*
+var result = prompt("이름을 입력해 주세요");
+
+console.log(result);
+console.log(result.length);
+console.log(result.trim().length);
+*/
+
+
+// 문자를 추출할 때 사용하는 메서드
+
+// var str = "Nice to meet you";
+
+// console.log(str.charAt(0));
+
+// console.log(str.length);
+// console.log(str.charAt(str.length - 1));
+
+// slice 역시 문자 추출할 때 사용
+
+// console.log(str.slice(0, 6));
+// console.log(str.slice(2, 6));
+// console.log(str.slice(2));
+
+
+// split 메서드 - 일정한 규칙으로 문자를 잘라낼 때, 잘라낸 문자를 배열 안에 담을 때 사용
+
+// console.log(str.split(' '));
+/*
+var str1 = "apple/pear/grape"
+console.log(str1.split('/'));
+*/
+
+
+// replace 메서드 - 원하는 문자를 지정한 후, 이를 교체하고자 할 때 사용
+/*
+var str = "This place is good";
+
+console.log(str);
+console.log(str.replace('place', 'apple'));
+*/
+
+
+// indexOf 메서드 - 문자열에서 단어를 검색한 후, 단어가 시작하는 위치의 좌표를 알려주는 메서드
+
+// var str = "This place is good";
+
+// console.log(str.indexOf('place'));
+
+
+// 모든 문자를 대문자 혹은 소문자로 변환하는 메서드
+// toUpperCase() - 대문자로 변환
+// toLowerCase() - 소문자로 변환
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+/*
+var search = prompt("검색어를 입력해 주세요");
+
+if(search.toLocaleLowerCase() === "apple") {
+
+    console.log("사과 데이터를 출력한다.");
+
+} else {
+    console.log("False");
+}
+*/
+
+
+// Array(배열)에서 가지고 있는 주요 기능 (property, 메서드)
+
+// var arr = ["사과", "배", "수박"];
+
+// console.log(arr.length);
+
+
+// push 메서드
+
+// console.log(arr);
+/*
+arr.push("포도");
+console.log(arr);
+
+arr.push("체리", "참외");
+console.log(arr);
+
+arr.unshift("토마토");
+console.log(arr);
+*/
+
+
+// pop() 메서드 - 배열의 뒤쪽에 있는 데이터를 삭제하고자 할 때 사용하는 메서드
+/*
+var arr = ["사과", "배", "수박"];
+
+arr.pop();
+console.log(arr);
+
+arr.shift();
+console.log(arr);
+*/
+
+
+// join 메서드 - 배열 안의 데이터를 규칙을 지정하여 문자열로 나타냄
+/*
+var arr1 = ["야구", "축구", "농구"];
+var str1 = arr1.join(', ');
+
+console.log(str1);
+*/
+
+
+// concat() 메서드 - 배열들을 합치고자 할 때 사용하는 메서드
+/*
+var arr1 = ["농구", "축구"];
+var arr2 = ["사과", "배"];
+
+var merge = arr1.concat(arr2);
+
+console.log(merge);
+*/
