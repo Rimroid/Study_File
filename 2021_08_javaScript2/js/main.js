@@ -632,3 +632,46 @@ var merge = arr1.concat(arr2);
 
 console.log(merge);
 */
+
+
+// 버튼을 클릭했을 때, 임의의 헥사코드값을 배경색에 변하면서 화면에 배경색의 헥사코드값이 출력
+
+var hex = document.getElementById('hex');
+var btn = document.getElementById('btn');
+
+
+// hex 태그와 btn태그가 정상적으로 따라왔는지 확인하기
+// console.log(hex);
+// console.log(btn);
+
+btn.addEventListener('click', createColor);
+
+function createColor () {
+    // console.log("클릭");
+
+    var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"];
+    var color = "#";
+
+    for(var i = 0; i < 6; i++) {
+        
+        var random = Math.floor(Math.random() * arr.length);
+        color += arr[random];
+
+    }
+
+    document.body.style.backgroundColor = color;
+    hex.textContent = color;
+};
+
+
+// #000fff;
+// 숫자 : 0 ~ 9
+// 알파벳 : a ~ f
+// 6글자 숫자와 알파벳 조합
+
+// # + 0 = #0;
+// #0 + f = #0f;
+// #0f + a = #0fa;
+// #0fa + a = #0faa;
+// #0faa + b = #0faab;
+// #0faab + c = #0faabc;
