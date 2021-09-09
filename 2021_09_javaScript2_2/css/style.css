@@ -1,0 +1,32 @@
+.box {
+  position: relative;
+
+  width: 500px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px black;
+
+  margin: 100px auto;
+}
+
+.btn {
+  position: absolute;
+  display: inline-block;
+  background-color: #cccccc;
+
+  padding: 10px;
+  color: #ffffff;
+}
+
+.prevBtn {
+  top: 50%;
+  left: 0;
+  transform: translate(-120%, -50%);
+}
+
+.nextBtn {
+  top: 50%;
+  right: 0;
+  transform: translate(120%, -50%);
+}
